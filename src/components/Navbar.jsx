@@ -3,6 +3,7 @@ import { faBars, faCartShopping, faMagnifyingGlass, faRightFromBracket } from '@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { getAuth, signOut } from 'firebase/auth';
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -10,6 +11,18 @@ const Navbar = () => {
     const clickHandler = () => {
         
     }
+
+    const googleLogout = async () => {
+        const auth = getAuth();
+        try {
+            await signOut(auth);
+            console.log("User signed out successfully.");
+        } catch (error) {
+            console.error("Error signing out: ", error);
+        }
+        navigate("/login");
+    }
+
   return (
     <div className='bg-[#ffb46f] rounded-3xl w-full px-10 py-5 gap-5 flex items-start'>
         <div className="nav-left flex gap-3 items-center">
@@ -46,7 +59,7 @@ const Navbar = () => {
         <div className="nav-right flex gap-5">
         <FontAwesomeIcon onClick={() => navigate("/cart")}  className='cursor-pointer text-4xl' icon={faCartShopping} />
         <FontAwesomeIcon className='text-4xl' icon={faUser} />
-        <FontAwesomeIcon className='text-4xl' icon={faRightFromBracket} />
+        <FontAwesomeIcon onClick={() => googleLogout()} className='cursor-pointer text-4xl' icon={faRightFromBracket} />
         </div>
     </div>
   )
