@@ -36,28 +36,39 @@ const Navbar = () => {
                 <FontAwesomeIcon className='bg-[#ece6f0] py-4 px-3 rounded-r-full' icon={faMagnifyingGlass} />
             </div>
             <div className="nav-mid-bottom flex gap-3">
-                <div className="bg-[#a2845e] px-3 py-2 rounded-3xl">
-                    <h3 className='text-white'>Cricket</h3>
-                </div>
-                <div className="bg-[#a2845e] px-3 py-2 rounded-3xl">
-                    <h3 className='text-white'>Cricket</h3>
-                </div>
-                <div className="bg-[#a2845e] px-3 py-2 rounded-3xl">
-                    <h3 className='text-white'>Cricket</h3>
-                </div>
-                <div className="bg-[#a2845e] px-3 py-2 rounded-3xl">
-                    <h3 className='text-white'>Cricket</h3>
-                </div>
-                <div className="bg-[#a2845e] px-3 py-2 rounded-3xl">
-                    <h3 className='text-white'>Cricket</h3>
-                </div>
-                <div className="bg-[#a2845e] px-3 py-2 rounded-3xl">
-                    <h3 className='text-white'>Cricket</h3>
-                </div>
-            </div>
+  <a href="/cricket" className="bg-[#a2845e] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#8b6b4b]">
+    <h3 className='text-white'>Cricket</h3>
+  </a>
+  <a href="/Football" className="bg-[#a2845e] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#8b6b4b]">
+    <h3 className='text-white'>Football</h3>
+  </a>
+  <a href="/Tennis" className="bg-[#a2845e] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#8b6b4b]">
+    <h3 className='text-white'>Tennis</h3>
+  </a>
+  <a href="/Swimming" className="bg-[#a2845e] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#8b6b4b]">
+    <h3 className='text-white'>Swimming</h3>
+  </a>
+  <a href="/Trekking" className="bg-[#a2845e] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#8b6b4b]">
+    <h3 className='text-white'>Trekking</h3>
+  </a>
+  <a href="/Cycling" className="bg-[#a2845e] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#8b6b4b]">
+    <h3 className='text-white'>Cycling</h3>
+  </a>
+  <a href="/Contact" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
+    <h3 className='text-white'>Contact Us</h3>
+  </a>
+  <a href="/FAQ's" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
+    <h3 className='text-white'>FAQ</h3>
+  </a>
+  <a href="/Review" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
+    <h3 className='text-white'>Reviews</h3>
+  </a>
+</div>
+
+
         </div>
         <div className="nav-right flex gap-5">
-        <FontAwesomeIcon onClick={() => navigate("/cart")}  className='cursor-pointer text-4xl' icon={faCartShopping} />
+        <FontAwesomeIcon      className='cursor-pointer text-4xl' icon={faCartShopping} />
         <FontAwesomeIcon className='text-4xl' icon={faUser} />
         <FontAwesomeIcon onClick={() => googleLogout()} className='cursor-pointer text-4xl' icon={faRightFromBracket} />
         </div>

@@ -1,0 +1,14 @@
+import React from 'react';
+import Navbar from '../components/Navbar'; // Adjust the path based on your folder structure
+import ContactForm from '../components/ContactForm.jsx'; // Adjust the path based on your folder structure
+
+const ContactPage = () => {
+  return (
+    <div>
+      <Navbar /> 
+      <ContactForm /> 
+    </div>
+  );
+};
+
+

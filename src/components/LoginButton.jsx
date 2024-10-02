@@ -14,6 +14,21 @@ function LoginButton() {
             .catch((error) => {
                 console.error("Error signing in: ", error);
             });
+
+            const LocalLoginButton = () => {
+                const navigate = useNavigate();
+              
+                const handleLogin = () => {
+                  navigate('/home');
+                };
+              
+                return (
+                  <button onClick={handleLogin} style={{ padding: '10px 20px', backgroundColor: 'blue', color: 'white', borderRadius: '5px', border: 'none', alignItems: "center" }}>
+                    Login
+                  </button>
+                );
+              };
+              
     };
 
     useEffect(() => {
@@ -24,7 +39,7 @@ function LoginButton() {
     }, [navigate]);
 
     return (
-        <button className="bg-black px-3 py-1 rounded-xl text-white" onClick={handleClick}>Login</button>
+        <button className="bg-black px-3 py-1 rounded-xl text-white" onClick={handleClick}>Login with Google</button>
     );
 }
 
