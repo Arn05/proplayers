@@ -57,7 +57,7 @@ const Navbar = () => {
   <a href="/Contact" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
     <h3 className='text-white'>Contact Us</h3>
   </a>
-  <a href="/FAQ's" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
+  <a href="/FAQ" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
     <h3 className='text-white'>FAQ</h3>
   </a>
   <a href="/Review" className="bg-[#2dc4e7] px-3 py-2 rounded-3xl transition duration-200 hover:bg-[#36a1ba]">
