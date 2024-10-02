@@ -54,7 +54,7 @@ export const FAQ = () => {
               <div
                 key={index}
                 className={`p-4 mb-4 cursor-pointer rounded-lg text-white ${
-                  index === currentIndex ? 'bg-white text-orange-400' : ''
+                  index === currentIndex ? 'bg-orange-600 text-orange-400' : ''
                 }`}
               >
                 {faq.question}
